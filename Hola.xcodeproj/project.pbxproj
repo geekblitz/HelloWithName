@@ -14,6 +14,14 @@
 		160AF2E11C4F160900FDA09B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160AF2DF1C4F160900FDA09B /* LaunchScreen.storyboard */; };
 		160AF2EC1C4F160900FDA09B /* HolaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AF2EB1C4F160900FDA09B /* HolaTests.swift */; };
 		160AF2F71C4F160900FDA09B /* HolaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AF2F61C4F160900FDA09B /* HolaUITests.swift */; };
+		16A2CFF51C50BD0B0010F94C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A2CFF31C50BD0B0010F94C /* Interface.storyboard */; };
+		16A2CFF71C50BD0B0010F94C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A2CFF61C50BD0B0010F94C /* Assets.xcassets */; };
+		16A2CFFE1C50BD0B0010F94C /* HolaWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 16A2CFFD1C50BD0B0010F94C /* HolaWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		16A2D0051C50BD0B0010F94C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A2D0041C50BD0B0010F94C /* InterfaceController.swift */; };
+		16A2D0071C50BD0B0010F94C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A2D0061C50BD0B0010F94C /* ExtensionDelegate.swift */; };
+		16A2D0091C50BD0B0010F94C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A2D0081C50BD0B0010F94C /* NotificationController.swift */; };
+		16A2D00B1C50BD0B0010F94C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A2D00A1C50BD0B0010F94C /* Assets.xcassets */; };
+		16A2D00F1C50BD0B0010F94C /* HolaWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 16A2CFF11C50BD0B0010F94C /* HolaWatch.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +39,46 @@
 			remoteGlobalIDString = 160AF2D21C4F160900FDA09B;
 			remoteInfo = Hola;
 		};
+		16A2CFFF1C50BD0B0010F94C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 160AF2CB1C4F160900FDA09B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16A2CFFC1C50BD0B0010F94C;
+			remoteInfo = "HolaWatch Extension";
+		};
+		16A2D00D1C50BD0B0010F94C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 160AF2CB1C4F160900FDA09B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16A2CFF01C50BD0B0010F94C;
+			remoteInfo = HolaWatch;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		16A2D0151C50BD0B0010F94C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				16A2CFFE1C50BD0B0010F94C /* HolaWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16A2D0171C50BD0B0010F94C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				16A2D00F1C50BD0B0010F94C /* HolaWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		160AF2D31C4F160900FDA09B /* Hola.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hola.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +94,17 @@
 		160AF2F21C4F160900FDA09B /* HolaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HolaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		160AF2F61C4F160900FDA09B /* HolaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolaUITests.swift; sourceTree = "<group>"; };
 		160AF2F81C4F160900FDA09B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16A2CFF11C50BD0B0010F94C /* HolaWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HolaWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16A2CFF41C50BD0B0010F94C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		16A2CFF61C50BD0B0010F94C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16A2CFF81C50BD0B0010F94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16A2CFFD1C50BD0B0010F94C /* HolaWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HolaWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16A2D0031C50BD0B0010F94C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		16A2D0041C50BD0B0010F94C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		16A2D0061C50BD0B0010F94C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		16A2D0081C50BD0B0010F94C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		16A2D00A1C50BD0B0010F94C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16A2D00C1C50BD0B0010F94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +129,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		16A2CFFA1C50BD0B0010F94C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +145,8 @@
 				160AF2D51C4F160900FDA09B /* Hola */,
 				160AF2EA1C4F160900FDA09B /* HolaTests */,
 				160AF2F51C4F160900FDA09B /* HolaUITests */,
+				16A2CFF21C50BD0B0010F94C /* HolaWatch */,
+				16A2D0011C50BD0B0010F94C /* HolaWatch Extension */,
 				160AF2D41C4F160900FDA09B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +157,8 @@
 				160AF2D31C4F160900FDA09B /* Hola.app */,
 				160AF2E71C4F160900FDA09B /* HolaTests.xctest */,
 				160AF2F21C4F160900FDA09B /* HolaUITests.xctest */,
+				16A2CFF11C50BD0B0010F94C /* HolaWatch.app */,
+				16A2CFFD1C50BD0B0010F94C /* HolaWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +194,37 @@
 			path = HolaUITests;
 			sourceTree = "<group>";
 		};
+		16A2CFF21C50BD0B0010F94C /* HolaWatch */ = {
+			isa = PBXGroup;
+			children = (
+				16A2CFF31C50BD0B0010F94C /* Interface.storyboard */,
+				16A2CFF61C50BD0B0010F94C /* Assets.xcassets */,
+				16A2CFF81C50BD0B0010F94C /* Info.plist */,
+			);
+			path = HolaWatch;
+			sourceTree = "<group>";
+		};
+		16A2D0011C50BD0B0010F94C /* HolaWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				16A2D0041C50BD0B0010F94C /* InterfaceController.swift */,
+				16A2D0061C50BD0B0010F94C /* ExtensionDelegate.swift */,
+				16A2D0081C50BD0B0010F94C /* NotificationController.swift */,
+				16A2D00A1C50BD0B0010F94C /* Assets.xcassets */,
+				16A2D00C1C50BD0B0010F94C /* Info.plist */,
+				16A2D0021C50BD0B0010F94C /* Supporting Files */,
+			);
+			path = "HolaWatch Extension";
+			sourceTree = "<group>";
+		};
+		16A2D0021C50BD0B0010F94C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16A2D0031C50BD0B0010F94C /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +235,12 @@
 				160AF2CF1C4F160900FDA09B /* Sources */,
 				160AF2D01C4F160900FDA09B /* Frameworks */,
 				160AF2D11C4F160900FDA09B /* Resources */,
+				16A2D0171C50BD0B0010F94C /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				16A2D00E1C50BD0B0010F94C /* PBXTargetDependency */,
 			);
 			name = Hola;
 			productName = Hola;
@@ -181,6 +283,40 @@
 			productReference = 160AF2F21C4F160900FDA09B /* HolaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		16A2CFF01C50BD0B0010F94C /* HolaWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16A2D0161C50BD0B0010F94C /* Build configuration list for PBXNativeTarget "HolaWatch" */;
+			buildPhases = (
+				16A2CFEF1C50BD0B0010F94C /* Resources */,
+				16A2D0151C50BD0B0010F94C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16A2D0001C50BD0B0010F94C /* PBXTargetDependency */,
+			);
+			name = HolaWatch;
+			productName = HolaWatch;
+			productReference = 16A2CFF11C50BD0B0010F94C /* HolaWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		16A2CFFC1C50BD0B0010F94C /* HolaWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16A2D0141C50BD0B0010F94C /* Build configuration list for PBXNativeTarget "HolaWatch Extension" */;
+			buildPhases = (
+				16A2CFF91C50BD0B0010F94C /* Sources */,
+				16A2CFFA1C50BD0B0010F94C /* Frameworks */,
+				16A2CFFB1C50BD0B0010F94C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HolaWatch Extension";
+			productName = "HolaWatch Extension";
+			productReference = 16A2CFFD1C50BD0B0010F94C /* HolaWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +338,12 @@
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = 160AF2D21C4F160900FDA09B;
 					};
+					16A2CFF01C50BD0B0010F94C = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					16A2CFFC1C50BD0B0010F94C = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
 			buildConfigurationList = 160AF2CE1C4F160900FDA09B /* Build configuration list for PBXProject "Hola" */;
@@ -220,6 +362,8 @@
 				160AF2D21C4F160900FDA09B /* Hola */,
 				160AF2E61C4F160900FDA09B /* HolaTests */,
 				160AF2F11C4F160900FDA09B /* HolaUITests */,
+				16A2CFF01C50BD0B0010F94C /* HolaWatch */,
+				16A2CFFC1C50BD0B0010F94C /* HolaWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +390,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16A2CFEF1C50BD0B0010F94C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16A2CFF71C50BD0B0010F94C /* Assets.xcassets in Resources */,
+				16A2CFF51C50BD0B0010F94C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16A2CFFB1C50BD0B0010F94C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16A2D00B1C50BD0B0010F94C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +438,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		16A2CFF91C50BD0B0010F94C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16A2D0091C50BD0B0010F94C /* NotificationController.swift in Sources */,
+				16A2D0071C50BD0B0010F94C /* ExtensionDelegate.swift in Sources */,
+				16A2D0051C50BD0B0010F94C /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +460,16 @@
 			isa = PBXTargetDependency;
 			target = 160AF2D21C4F160900FDA09B /* Hola */;
 			targetProxy = 160AF2F31C4F160900FDA09B /* PBXContainerItemProxy */;
+		};
+		16A2D0001C50BD0B0010F94C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16A2CFFC1C50BD0B0010F94C /* HolaWatch Extension */;
+			targetProxy = 16A2CFFF1C50BD0B0010F94C /* PBXContainerItemProxy */;
+		};
+		16A2D00E1C50BD0B0010F94C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16A2CFF01C50BD0B0010F94C /* HolaWatch */;
+			targetProxy = 16A2D00D1C50BD0B0010F94C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -307,6 +488,14 @@
 				160AF2E01C4F160900FDA09B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		16A2CFF31C50BD0B0010F94C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16A2CFF41C50BD0B0010F94C /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -463,6 +652,66 @@
 			};
 			name = Release;
 		};
+		16A2D0101C50BD0B0010F94C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = HolaWatch_Extension;
+				INFOPLIST_FILE = HolaWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = gkb.Hola.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		16A2D0111C50BD0B0010F94C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = HolaWatch_Extension;
+				INFOPLIST_FILE = HolaWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = gkb.Hola.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		16A2D0121C50BD0B0010F94C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "HolaWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gkb.Hola.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		16A2D0131C50BD0B0010F94C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "HolaWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gkb.Hola.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -482,6 +731,7 @@
 				160AF2FD1C4F160900FDA09B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		160AF2FE1C4F160900FDA09B /* Build configuration list for PBXNativeTarget "HolaTests" */ = {
 			isa = XCConfigurationList;
@@ -490,12 +740,30 @@
 				160AF3001C4F160900FDA09B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		160AF3011C4F160900FDA09B /* Build configuration list for PBXNativeTarget "HolaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				160AF3021C4F160900FDA09B /* Debug */,
 				160AF3031C4F160900FDA09B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16A2D0141C50BD0B0010F94C /* Build configuration list for PBXNativeTarget "HolaWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16A2D0121C50BD0B0010F94C /* Debug */,
+				16A2D0131C50BD0B0010F94C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		16A2D0161C50BD0B0010F94C /* Build configuration list for PBXNativeTarget "HolaWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16A2D0101C50BD0B0010F94C /* Debug */,
+				16A2D0111C50BD0B0010F94C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
